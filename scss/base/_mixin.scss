@@ -31,6 +31,23 @@
     color: $color;
 }
 
+@mixin desktop{
+    @media(max-width: v.$desktop){
+        @content;
+    }
+}
+
+@mixin medium{
+    @media(max-width: v.$medium){
+        @content;
+    }
+}
+
+@mixin little{
+    @media(max-width: v.$little){
+        @content;
+    }
+}
 
 
 
