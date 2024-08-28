@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 18px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.principal-container {
+  margin-bottom: 1.4rem;
+}
+.principal-container .principalBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.principal-container .principalBox-imageContainer {
+  width: 50%;
+}
+.principal-container .principalBox-image {
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+.principal-container .principalBox-content {
+  width: 50%;
+}
+.principal-container .principalBox-title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #343a40;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.principal-container .principalBox-text {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-family: Arial;
+  line-height: 1.7;
+  color: #666666;
+}
+
+.team {
+  margin-bottom: 1.4rem;
+}
+.team-title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #343a40;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.3rem;
+}
+.team .personal {
+  display: flex;
+  gap: 1.5rem;
+}
+.team .personal-card {
+  width: 450px;
+}
+.team .personal-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+.team .personal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.team .personal-name {
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #343a40;
+  font-family: sans-serif;
+}
+.team .personal-description {
+  text-align: left;
+  font-size: 1rem;
+  font-family: Arial;
+  line-height: 1.6;
+  color: #666666;
+}
+.team .personal .networks {
+  display: flex;
+  gap: 2rem;
+}
+.team .personal .networks-link {
+  font-size: 1.3rem;
+}
+.team .personal .networks-link:nth-child(1) {
+  color: #1877F2;
+}
+.team .personal .networks-link:nth-child(2) {
+  color: #00ACEE;
+}
+.team .personal .networks-link:nth-child(3) {
+  color: #FF0000;
+}
+
+/*# sourceMappingURL=styles.css.map */

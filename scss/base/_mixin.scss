@@ -1,0 +1,39 @@
+@use "variables" as v;
+
+@mixin boton{
+    background-color: v.$colorSpecial;
+    padding: 1rem 2.5rem;
+    color:v.$colorLight;
+    border: none;
+}
+
+@mixin botonPersonalizado($colorFondo, $colorTexto, $espaciadoY, $espaciadoX){
+    background-color: $colorFondo;
+    padding: $espaciadoY $espaciadoX;
+    color:$colorTexto;
+    border: none;
+}
+
+@mixin titulo($alineacion, $ancho, $color, $tamanio:2rem){
+    text-align: $alineacion;
+    font-weight: $ancho;
+    font-size: $tamanio;
+    color: $color;
+    font-family: v.$primaryFont;
+}
+
+
+@mixin texto($alineacion, $interlineado, $color,$tamanio:1rem){
+    text-align: $alineacion;
+    font-size: $tamanio;
+    font-family: v.$secondaryFont;
+    line-height: $interlineado;
+    color: $color;
+}
+
+
+
+
+
+
+

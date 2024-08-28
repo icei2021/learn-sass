@@ -1,0 +1,49 @@
+@use "../../base/variables" as v;
+@use "../../base/mixin" as m;
+
+.principal-container{
+    margin-bottom: v.$break;
+    .principalBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+
+        &-imageContainer{
+            width: 50%;
+
+        }
+        &-image{
+            width: 100%;
+            min-height: 500px;
+            object-fit: cover;
+            object-position: center;
+        }
+        &-content{
+            width: 50%;
+
+        }
+        &-title{
+            @include m.titulo(left, 700, v.$primaryColor,2.5rem);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+                        
+        }
+        &-text{
+            @include m.texto(justify, 1.7, v.$colorText ,1.1rem);
+            
+        }
+
+        // &:nth-child(2) .principalBox-imageContainer{
+        //     order: 2; 
+        // }
+        // &:nth-child(2) .principalBox-content{
+        //     order: 1; 
+        // }
+
+    }
+
+
+}
+
+
