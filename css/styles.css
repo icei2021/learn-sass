@@ -25,7 +25,7 @@ html {
   gap: 1.5rem;
 }
 .principal-container .principalBox-imageContainer {
-  width: 50%;
+  width: 40%;
 }
 .principal-container .principalBox-image {
   width: 100%;
@@ -34,7 +34,7 @@ html {
   object-position: center;
 }
 .principal-container .principalBox-content {
-  width: 50%;
+  width: 60%;
 }
 .principal-container .principalBox-title {
   text-align: left;
@@ -51,6 +51,12 @@ html {
   font-family: Arial;
   line-height: 1.7;
   color: #666666;
+}
+.principal-container .principalBox:nth-child(2) .principalBox-imageContainer {
+  order: 2;
+}
+.principal-container .principalBox:nth-child(2) .principalBox-content {
+  order: 1;
 }
 
 .team {
@@ -72,9 +78,21 @@ html {
 .team .personal-card {
   width: 450px;
 }
-.team .personal-image {
+.team .personal-img {
+  overflow: hidden;
   width: 100%;
-  height: 500px;
+  height: 550px;
+  margin-bottom: 0.5rem;
+}
+.team .personal-img:hover .personal-image {
+  transform: scale(1.2) skew(5deg);
+  filter: blur(0px);
+}
+.team .personal-image {
+  filter: blur(1.5px);
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: top;
 }

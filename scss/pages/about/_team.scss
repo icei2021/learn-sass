@@ -16,9 +16,22 @@
         &-card{
             width: 450px;
         }
-        &-image{
+        &-img{
+            overflow: hidden;
             width: 100%;
-            height: 500px;
+            height: 550px;
+            margin-bottom: 0.5rem;
+            &:hover .personal-image{
+                transform: scale(1.2) skew(5deg);
+                filter: blur(0px);
+            }
+
+        }
+        &-image{
+            filter: blur(1.5px);
+            transition: transform .5s ease;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             object-position: top;
         }
